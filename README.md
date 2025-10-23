@@ -3,6 +3,7 @@ This repository contains my personal notes and diagrams for System Design concep
 ## Contents
 
 -[Introduction](Intro.md)
+
 - [Core Features](core_Features.md) –
 -  Scalability
 -  Availability
@@ -11,6 +12,7 @@ This repository contains my personal notes and diagrams for System Design concep
 -  CAP Theorem
 -  Consistent Hashing
 -  Latency Vs Throughput
+
 -[Networking](networking.md) -
 - OSI Model
 - IP Address
