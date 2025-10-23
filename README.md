@@ -3,7 +3,7 @@ This repository contains my personal notes and diagrams for System Design concep
 ## Contents
 
 -[Introduction](Intro.md)
-![Key Components](key.png)
+
 
 
 
