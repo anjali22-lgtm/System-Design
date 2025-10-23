@@ -20,6 +20,7 @@ Once the requirements are clear then they get blueprints showing how things are 
 
 
 Key Components of a System Design
+![Key Components](key.png)
 
 1.Client- The user facing part of the system-where interactions happens.
 ex: Mobile App,Web browser.
