@@ -9,4 +9,4 @@ This repository contains my personal notes and diagrams for System Design concep
 
 
 
-![Key Components](https://raw.githubusercontent.com/anjali22-lgtm/System-Design/main/key.png)
+
