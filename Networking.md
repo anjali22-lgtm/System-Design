@@ -12,6 +12,7 @@ Think of it like a factory assembly line, where each station performs a speciali
 
 A crucial concept is encapsulation: As data moves down the stack at the sender, each layer adds its own "header" (and sometimes a trailer) containing control information. 
 When data moves up the stack at the receiver, each layer strips off its corresponding header.
+![OSI Model](osi.png)
 
 -layer 1: (Physical layer)
 The Physical Layer is responsible for the actual transmission of raw bits (0s and 1s) over the physical communication medium. 
@@ -96,6 +97,7 @@ Network ID: 192.168.1
 Host ID: 10
 Routers primarily look at the Network ID. They don't need to know about every single device in the world, only which network a packet is destined for.
 They use this information to forward the packet to the next router closer to the destination network.
+![IP Addressing](ip.png)
 
 
 ## IPv4 vs IPv6
@@ -116,6 +118,7 @@ IP addressing is a fundamental part of networking, allowing devices to communica
 - **IPv4** is still widely used but running out of addresses.  
 - **IPv6** solves address exhaustion and offers better security and auto-configuration.  
 - Modern systems support both via **dual stack networks**.
+- ![IPv4 vs IPv6](v46.png)
 
 
 ## Public IP vs Private IP
@@ -150,12 +153,14 @@ Instead of typing 93.184.216.34 into your browser, you simply enter , and DNS ta
 How DNS works?
 The process of DNS resolution involves converting a hostname (such as www.example.com) into a computer-friendly IP address (such as 192.168.1.1). 
 An IP address is given to each device on the Internet, and that address is necessary to find the appropriate Internet device - like a street address is used to find a particular home.
+![DNS](dns.png)
 When a user wants to load a webpage, a translation must occur between what a user types into their web browser (example.com) and the machine-friendly address necessary to locate the example.com webpage.
 
 In order to understand the process behind the DNS resolution, it’s important to learn about the different hardware components a DNS query must pass between.
 For the web browser, the DNS lookup occurs "behind the scenes" and requires no interaction from the user’s computer apart from the initial request.
 
 Hierarchical structure of DNS:
+![Network Structure](stru.png)
 
 Conclusion
 The Domain Name System (DNS) is an essential component of the Internet, acting as a distributed phone book that maps human-friendly domain names to machine-friendly IP addresses. 
@@ -224,6 +229,7 @@ Unlike a forward proxy (which serves the client), a reverse proxy **serves the s
 
 ### Example Use Case:
 - Large websites like **Netflix, Amazon, or Google** use reverse proxies to handle millions of requests efficiently.
+- ![Proxy Server](proxy.png)
 
 
 
@@ -344,6 +350,8 @@ The main difference is **security**: HTTPS encrypts the data, while HTTP does no
 | Use Case              | Non-sensitive data transfer          | Sensitive data (login, payments, personal info) |
 
 ---
+![HTTP Flow](http.png)
+
 
 
 
@@ -379,6 +387,7 @@ TCP and UDP are two core **transport layer protocols** used for sending data ove
 3. Very fast and lightweight, ideal for **real-time applications**.  
 
 ---
+![TCP Flow](tcp.png)
 
 ✅ **Key Points:**
 - **TCP** = reliable, ordered, connection-oriented (safe but slower).  
@@ -389,6 +398,7 @@ TCP and UDP are two core **transport layer protocols** used for sending data ove
 LOAD BALANCER
 Load Balancer is a system that spreads incoming network traffic across multiple backend servers (often called “worker nodes” or “application servers”).
 It ensures that no single server becomes a bottleneck due to an overload of requests. By distributing the load, applications can handle higher volumes of traffic and remain robust in the face of server failures.
+![Load](load.png)
 
 Why Do We Need a Load Balancer?
 Scalability: As traffic grows, you can add more servers behind the load balancer without redesigning your entire architecture.
@@ -444,7 +454,8 @@ Here are the most common ones:
 - **Round Robin**: Simple and fair but doesn’t consider server load.  
 - **Least Connections**: Dynamically balances based on server usage.  
 - **IP Hash**: Good for session persistence.  
-- **Weighted algorithms**: Useful when servers have different hardware specs.  
+- **Weighted algorithms**: Useful when servers have different hardware specs.
+- ![Response](res.png) 
 
 
 
@@ -468,6 +479,7 @@ It is used to **verify the integrity of data** when it is stored or transmitted 
    - If they **don’t match**, it indicates **data corruption** during transmission.
 
 ---
+![Summary](sum.png)
 
 ### Key Points:
 
