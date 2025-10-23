@@ -17,16 +17,19 @@ Scaling a system effectively is one of the most critical aspects of satisfying n
 Scalability, in particular, is often a top priority. Below, we explore various strategies to achieve scalable system architecture.
 
 Decomposition:
+![Decoupling](dec.png)
 Decomposition involves breaking down requirements into microservices. The key principle is to divide the system into smaller, independent services based on specific business capabilities or requirements.
 Each microservice should focus on a single responsibility to enhance scalability and maintainability.
 
 
 Vertical Scaling:
+![Vertical Scaling](ver.png
 This means adding more power to your existing machines by upgrading server with more RAM, faster CPUs, or additional storage.
 It's a good approach for simpler architectures but has limitations in how far you can go.
 
 
 Horizontal Scaling:
+![Horizontal Scaling](hor.png)
 This means adding more machines to your system to spread the workload across multiple servers.
 It's often considered the most effective way to scale for large systems.
 
@@ -40,6 +43,7 @@ Example: Google employs load balancing extensively across its global infrastruct
 
 
 Caching:
+![Caching](cach.png)
 Caching serves to improve query read performance by storing frequently accessed data in faster memory storage, such as in-memory caches. 
 Popular tools like Redis or Memcached can effectively store hot data to reduce database load.
 
@@ -60,6 +64,7 @@ Example: Uber has evolved its architecture into microservices to handle differen
 
 
 Auto Scaling:
+![Auto Scaling](auto.png)
 Auto-Scaling means automatically adjusting the number of active servers based on the current load.
 This ensures that the system can handle spikes in traffic without manual intervention.
 
@@ -82,6 +87,7 @@ Availability = Uptime / (Uptime + Downtime)
 Uptime: The period during which a system is functional and accessible.
 
 Downtime: The period during which a system is unavailable due to failures, maintenance, or other issues.
+![Availability](ava.png)
 
 
 
@@ -142,7 +148,8 @@ Reliable systems require **less manual recovery** and fewer emergency fixes, sav
 
 CONSISTENCY MODELS:
 In distributed systems, consistency models define how data updates are shared and viewed across multiple nodes. They set the rules for synchronization, ensuring users and applications interpret data changes 
-correctly. 
+correctly.
+![Consistency](cons.png)
 Depending on the approach, strict or relaxed systems balance reliability, availability, and performance.
 
 TYPES:
@@ -206,6 +213,7 @@ It is impossible for a distributed data store to simultaneously provide all thre
 Consistency (C): Every read receives the most recent write or an error.
 Availability (A): Every request (read or write) receives a non-error response, without guarantee that it contains the most recent write.
 Partition Tolerance (P): The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes.
+![Latency](lat.png)
 
 Beyond CAP: PACELC
 While CAP is foundational, it doesn't cover all scenarios.
@@ -228,6 +236,7 @@ A common approach is to use hash the request and assign it to a server using Has
 
 However, this method is highly dependent on the number of servers, and any change in N can lead to significant rehashing, causing a major redistribution of keys (requests).
 Consistent hashing addresses this issue by ensuring that only a small subset of keys need to be reassigned when nodes are added or removed.
+![Hashing](ring.png)
 
 How Consistent Hashing Works?
 Consistent hashing is a distributed hashing technique used to efficiently distribute data across multiple nodes (servers, caches, etc.).
@@ -303,6 +312,7 @@ Easy to scale large systems
 
 
 LATENCY Vs THROUGHPUT
+![Latency](lat.png)
 
 Latency is the time it takes for a single request to travel from the source to the destination and get a response.
 It’s basically the delay in your system.
