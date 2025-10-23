@@ -5,9 +5,12 @@ This repository contains my personal notes and diagrams for System Design concep
 -[Introduction](Intro.md)
 - [Core Features](core_Features.md) –
 -  Scalability
--   Availability
--   Reliability
--   Consistency, Hashing, CAP Theorem
+-  Availability
+-  Reliability
+-  Consistency Models
+-  CAP Theorem
+-  Consistent Hashing
+-  Latency Vs Throughput
 
 
 
