@@ -72,7 +72,21 @@ Deploy the application in multiple data centers or cloud regions to reduce laten
 Example: Spotify uses multi-region deployments to ensure their music streaming service remains highly available and responsive to users all over the world, regardless of where they are located.
 
 
-2.Reliability-In simple terms, reliability is the ability of a system to perform its intended function consistently over time.
+2.Availabilty:
+Availability refers to the proportion of time a system is operational and accessible when required.
+It is usually expressed as a percentage, indicating the system's uptime over a specific period.
+
+The formal definition of availability is:
+Availability = Uptime / (Uptime + Downtime)
+
+Uptime: The period during which a system is functional and accessible.
+
+Downtime: The period during which a system is unavailable due to failures, maintenance, or other issues.
+
+
+
+
+3.Reliability-In simple terms, reliability is the ability of a system to perform its intended function consistently over time.
 A reliable system is one that:
 
 Remains operational: It continues to work even when parts of it fail.
