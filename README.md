@@ -24,7 +24,7 @@ This repository contains my personal notes and diagrams for System Design concep
 - Load Balancing Algorithm
 - CheckSums
 
--[API Fundamentals](API_Fundamentals.md)
+-[API_Fundamentals](API_Fundamentals.md)
 - What is an API
 - Data Formats
 - API Architectural Styles
