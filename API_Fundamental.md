@@ -17,6 +17,7 @@ APIs follow a simple request-response model:
 A client (such as a web app or mobile app) makes a request to an API.
 The API (hosted on an API server) processes the request, interacts with the necessary databases or services, and prepares a response.
 The API sends the response back to the client in a structured format (usually JSON or XML).
+![API](https://github.com/anjali22-lgtm/System-Design/raw/44764ba8f9347e505885ba05b0da5820228b142c/api.png)
 
 
 For example, the Google Maps API always returns coordinates in the same format.
@@ -34,6 +35,7 @@ Json:
 }
 
 Types of APIs:
+![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/type.png)
 1. REST API (Representational State Transfer)
 Most widely used API type.
 Uses HTTP methods like GET, POST, PUT, and DELETE.
@@ -113,6 +115,7 @@ How to use API?
 
 Using an API might seem complex at first, but it follows a simple request-response pattern.
 Here’s a guide on how to find, access, and interact with an API step by step:
+![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/use.png)
 
 Step 1: Find an API to Use
 Before using an API, you need to identify the right API for your needs. APIs are available for different services like weather data, finance, social media, etc.
@@ -300,9 +303,11 @@ Used in: Data exports, analytics, reports.
 Compact and faster to transmit than text-based formats.
 Used in internal or microservice communication.
 Used in: gRPC APIs, high-performance systems.
+![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/data.png)
 
 
 API Architectural Styles:
+![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/archi.png)
 1.REST (Representational State Transfer)
 
 Most widely used API style on the web.
@@ -362,6 +367,7 @@ Allows servers to push data to clients automatically via HTTP.
 Lightweight alternative to WebSockets.
 
 Used in: Real-time feeds, stock tickers, live updates.
+![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/styles.png)
 
 
 
@@ -375,6 +381,7 @@ This is where API Gateway comes into play.
 An API Gateway acts as a central server that sits between clients (e.g., browsers, mobile apps) and backend services.
 Instead of clients interacting with multiple microservices directly, they send their requests to the API Gateway.
 The gateway processes these requests, enforces security, and forwards them to the appropriate microservices.
+![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/gate.png)
 
 
 Why do we need API Gateways?
@@ -424,6 +431,7 @@ Prevents misuse and protects backend services from overload.
 
 Stores frequently requested responses for faster delivery.
 Reduces latency and load on backend services.
+![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/cache.png)
 
 6. Protocol Translation
 
@@ -498,6 +506,7 @@ Client → API Gateway → [User Service, Order Service, Payment Service]
            |→ Rate Limiting
            |→ Caching
            |→ Monitoring & Logging
+           ![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/bal.png)
 
 
 
@@ -539,6 +548,7 @@ Cons: Requests exceeding the limit are lost.
 Adjusts the allowed rate based on server load or client behavior.
 Example: Reduce request limits during high traffic periods.
 Pros: Efficiently manages traffic and ensures system stability.
+![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/rate.png)
 
 
 
@@ -559,6 +569,7 @@ In this blog, we'll explore what idempotency is, why it matters, how to implemen
 What is Idempotency?
 Idempotency is a property of an operation where performing it multiple times has the same effect as performing it once.
 In simpler words, no matter how many times a request is sent, the result on the server remains the same.
+![API](https://github.com/anjali22-lgtm/System-Design/blob/7fbc2bb21c545d5b090750725b3c2ed30129201f/idem.png)
 
 
 Why its Matter?
