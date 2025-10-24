@@ -13,7 +13,7 @@ This repository contains my personal notes and diagrams for System Design concep
 -  Consistent Hashing
 -  Latency Vs Throughput
 
--[Networking](networking.md) -
+-[networking](networking.md) -
 - OSI Model
 - IP Address
 - Domain name system(DNS)
