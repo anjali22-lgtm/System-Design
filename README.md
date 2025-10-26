@@ -23,7 +23,6 @@ This repository contains my personal notes and diagrams for System Design concep
 - Load Balancers
 - Load Balancing Algorithm
 - CheckSums
-
 -[API_Fundamental](API_Fundamental.md)
 - What is an API
 - Data Formats
@@ -31,7 +30,6 @@ This repository contains my personal notes and diagrams for System Design concep
 - API Gateways
 - Rate Limiting
 - Idempotency
-
 - [Database_Fundamentals](Database_Fundamentals.md)
 - DataBaseTypes(ACID)
 - SQL vs NoSQL
