@@ -14,6 +14,7 @@ Atomicity means a transaction is all-or-nothing either all its operations succee
 Commit: If the transaction is successful, the changes are permanently applied.
 Abort/Rollback: If the transaction fails, any changes made during the transaction are discarded.
 Example: Consider the following transaction T consisting of T1 and T2 : Transfer of $100 from account X to account Y .
+![Data](https://github.com/anjali22-lgtm/System-Design/blob/8b9ea6c4649f3c04ab777576a872cef8f2c00ff2/ato.png)
 
 
 2.Consistency:
@@ -26,6 +27,7 @@ Example: Suppose the sum of all balances in a bank system should always be const
 
 Total before T occurs = 500 + 200 = 700 .
 Total after T occurs = 400 + 300 = 700 .
+![Data](https://github.com/anjali22-lgtm/System-Design/blob/8b9ea6c4649f3c04ab777576a872cef8f2c00ff2/con.png)
 
 
 3.Isolation:
@@ -38,6 +40,7 @@ Phantom reads: new rows appear during a transaction
 Example: Consider two transactions T and T''.
 
 X = 500, Y = 500
+![Data](https://github.com/anjali22-lgtm/System-Design/blob/8b9ea6c4649f3c04ab777576a872cef8f2c00ff2/iso.png)
 
 Isolation ensures that transactions run independently without affecting each other. Changes made by one transaction are not visible to others until they are committed.
 It ensures that the result of concurrent transactions is the same as if they were run one after another, preventing issues like:
@@ -89,6 +92,8 @@ Edges: PLACED_ORDER
 (Mike) --PLACED_ORDER--> (Smartphone)
 (Ron) --PLACED_ORDER--> (Headphones)
 
+![Data](https://github.com/anjali22-lgtm/System-Design/blob/8b9ea6c4649f3c04ab777576a872cef8f2c00ff2/SQL.png)
+
 
 BLOOM FILTERS
 
@@ -104,6 +109,7 @@ Bloom filter is a space-efficent probabilistic data structure that tells whether
 
 How Does a Bloom Filter Work?
 A Bloom filter works by using multiple hash functions to map each element in the set to a bit array.
+![Data](https://github.com/anjali22-lgtm/System-Design/blob/8b9ea6c4649f3c04ab777576a872cef8f2c00ff2/bloom.png)
 
 1. Initialization:
 A Bloom filter starts with an empty bit array of size m (all bits are initially set to 0).
