@@ -32,6 +32,11 @@ This repository contains my personal notes and diagrams for System Design concep
 - Rate Limiting
 - Idempotency
 
+- [Database_Fundamentals](Database_Fundamentals.md)
+- DataBaseTypes(ACID)
+- SQL vs NoSQL
+- Bloom Filters
+
 
 
 
