@@ -36,7 +36,7 @@ This repository contains my personal notes and diagrams for System Design concep
 - DataBaseTypes(ACID)
 - SQL vs NoSQL 
 - Bloom Filters
-- 
+
 - [caching_fundamentals](caching_fundamentals.md)-
 - Caching
 - Benefits
